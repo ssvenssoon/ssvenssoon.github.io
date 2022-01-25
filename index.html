@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tv-Shows</title>
+    <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="196x196"
+      href="data:image/png;base64,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"
+    />
+    <link rel="apple-touch-icon" href="/assets/apple-icon-180.5fda0c22.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script type="module" crossorigin src="/assets/index.2f7ccd14.js"></script>
+    <link rel="modulepreload" href="/assets/vendor.e4e39002.js">
+    <link rel="stylesheet" href="/assets/index.af2e2557.css">
+  <link rel="manifest" href="/manifest.webmanifest"></head>
+  <body>
+    <div id="app"></div>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
